@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITE HOUSE | Fast-Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">BITE<span>HOUSE.</span></a>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#menu">Notre menu</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#menu" class="btn">Commander</a>
+</header>
+
+<section class="hero" id="accueil">
+    <div class="hero-text">
+        <p class="subtitle" id="bienvenue"></p>
+
+        <h1>LE BON GOÛT<br>
+            <span>À CHAQUE BOUCHÉE.</span>
+        </h1>
+
+        <p class="description">
+            Des burgers généreux, des pizzas savoureuses
+            et des ingrédients soigneusement sélectionnés.
+            Le plaisir commence ici !
+        </p>
+        <p class="note"> projet fictif réalisé dans le cadre de mon portfolio de développeuse web</p>
+
+        <a href="#menu" class="btn" id="boutonMenu">
+            Découvrir notre menu →
+        </a>
+    </div>
+
+    <div class="hero-image">
+        <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+            alt="Burger gourmand">
+    </div>
+</section>
+
+<section class="menu" id="menu">
+    <p class="subtitle">NOS SPÉCIALITÉS</p>
+    <h2>Les favoris du moment 🍔</h2>
+<p id="messageMenu"></p>
+<div class="panier" id="panier">
+
+    <h3>🛒 Mon panier (
+        <span id="nombreArticles">0</span>
+    )</h3>
+
+    <ul id="listePanier"></ul>
+
+    <p id="totalPanier">Total : 0 FCFA</p>
+
+    <button type="button" class="btn" id="viderPanier">
+        Vider le panier
+    </button>
+
+</div>
+    <div class="menu-container">
+
+        <article class="card">
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80"
+                alt="Classic Burger">
+
+            <h3>Classic Burger</h3>
+            <p>Un burger gourmand avec une viande savoureuse.</p>
+            <div class="price">3 500 FCFA</div>
+            <button type="button" class="btn" id="commanderBurger">
+    Ajouter au panier
+</button>
+        </article>
+
+        <article class="card">
+            <img
+                src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=600&q=80"
+                alt="Pizza">
+
+            <h3>Pizza Spéciale</h3>
+            <p>Une pizza généreuse pour les amateurs de fromage.</p>
+            <div class="price">5 000 FCFA</div>
+            <button type="button" class="btn" id="commanderPizza">
+    Ajouter au panier
+</button>
+        </article>
+
+        <article class="card">
+            <img
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80"
+                alt="Milkshake">
+
+            <h3>Milkshake</h3>
+            <p>Une boisson fraîche et onctueuse pour se faire plaisir.</p>
+            <div class="price">2 000 FCFA</div>
+            <button type="button" class="btn" id="commanderMilkshake">
+    Ajouter au panier
+</button>
+        </article>
+
+    </div>
+    <p id="messageCommande"></p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Envie de te régaler ?</h2>
+    <p>Contacte-nous pour passer ta commande !</p>
+    <a href="https://wa.me/221770000000" class="btn">
+        Commander sur WhatsApp
+    </a>
+    <p class="note">
+        Remplace le numéro WhatsApp de démonstration par celui du restaurant.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 BITE HOUSE — Tous droits réservés.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
